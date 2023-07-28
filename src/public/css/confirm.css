@@ -1,0 +1,66 @@
+.confirm {
+    max-width: 1230px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.confirm_content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.confirm_content-table {
+    width: 100%;
+}
+
+.confirm_content-header {
+    font-weight: bold;
+    width: 300px;
+    text-align: left;
+    padding: 20px 10px;
+    vertical-align: top;
+}
+
+.confirm_content-item {
+    padding: 20px 10px;
+}
+
+.confirm_content-name {
+    display: flex;
+}
+
+.confirm_input {
+    border: none;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.confirm_input-option {
+    height: 150px;
+    vertical-align: top;
+}
+
+.confirm_button {
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    color: #fff;
+    background-color: #000000;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.confirm_fix-link {
+    color: #000000;
+}

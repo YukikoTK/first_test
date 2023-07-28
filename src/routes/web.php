@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [ContactController::class, 'index'])->name('contact.form');
+Route::post('/contacts/confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
+Route::get('/contacts/edit', [ContactController::class, 'edit'])->name('contact.edit');
+Route::post('/contacts/store', [ContactController::class, 'store'])->name('contact.store');
+
+
+
+Route::get('/customer', [CustomerController::class, 'index'])->name('customer.system');
+Route::get('/customer/search', [CustomerController::class, 'search'])->name('customer.search');
+Route::get('/customer/reset', [CustomerController::class, 'reset'])->name('customer.reset');
+Route::delete('/customer/delete', [CustomerController::class, 'destroy'])->name('customer.delete');

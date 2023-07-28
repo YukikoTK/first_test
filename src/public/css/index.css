@@ -1,0 +1,160 @@
+.form {
+    max-width:1230px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form_content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form_content-tittle {
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.form_label-required {
+    color: #ff0000;
+}
+
+.email,
+.address,
+.building_name
+{
+    border-radius: 5px;
+    width: 766px;
+    height: 35px;
+    border: 1px #ddd solid;
+}
+
+.option {
+    border-radius: 5px;
+    width: 766px;
+    height: 130px;
+    border: 1px #ddd solid;
+}
+
+.lastname,
+.firstname {
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+    border: 1px #ddd solid;
+}
+
+.postcode {
+    border-radius: 5px;
+    width: 730px;
+    height: 35px;
+    border: 1px #ddd solid;
+}
+
+.example_lastname,
+.example_firstname,
+.example {
+    color: #ddd;
+}
+
+.form_content-inner {
+    height: 130px;
+}
+
+.form_content-flex {
+    display: flex;
+}
+
+.form_input-item-name {
+    display: flex;
+}
+
+.lastname {
+    margin-right: 50px;
+}
+
+.form_input-item {
+    width: 80%;
+    height: 100px;
+}
+
+.form_input-gender {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.radio:first-child {
+    margin-right: 70px;
+}
+
+.form_input-gender,
+.form_input-gender::before,
+.form_input-gender::after {
+    box-sizing: border-box;
+}
+
+.radio_input {
+    appearance: none;
+    position: absolute;
+}
+
+.radio_text::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 1px #ddd solid;
+    width: 40px;
+    height: 40px;
+}
+
+.radio_input:checked+.radio_text::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+.radio_text {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form_input-postcode {
+    display: flex;
+}
+
+.form_input-postcode-textarea {
+    margin-left: 20px;
+}
+
+.form_button {
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    color: #fff;
+    background-color: #000000;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form_error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}

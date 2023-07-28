@@ -1,0 +1,210 @@
+.system {
+    max-width: 1230px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.system_content {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.system_content-tittle {
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.system_content-tittle-gender {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    padding-top: 10px;
+}
+
+.name,
+.date,
+.email {
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    border: 1px #ddd solid;
+}
+
+.system_content-top {
+    margin-left: 60px;
+}
+
+.date_space {
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 10px;
+}
+
+
+.system_content-flex {
+    display: flex;
+}
+
+.system_content-inner {
+    padding-bottom: 15px;
+}
+
+.radio_input {
+    appearance: none;
+    position: absolute;
+}
+
+.radio_text::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 1px #ddd solid;
+    width: 40px;
+    height: 40px;
+}
+
+.radio_input:checked+.radio_text::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+.radio_text {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radio {
+    margin-right: 70px;
+}
+
+.system_button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    color: #fff;
+    background-color: #000000;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.system_fix-link {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: none;
+}
+
+
+.system_list {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.system_list-inner {
+    margin-top: 100px;
+}
+
+.system_list-item {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.system_list-header {
+    text-align: left;
+}
+
+.system_list-id,
+.system_input_center {
+    text-align: center;
+}
+
+
+.system_input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px black solid;
+}
+
+.system_list-input {
+    width: 100%;
+}
+
+.input_none {
+    border: none;
+    outline: none;
+    width: 95%;
+}
+
+.system_list-id {
+    width: 5%;
+}
+
+.system_list-name{
+    width: 10%;
+}
+
+.system_list-gender {
+    width: 5%;
+}
+
+.system_list-email {
+    width: 25%;
+}
+
+.system_list-msg {
+    width: 50%;
+}
+
+.delete_button {
+    text-align: right;
+}
+
+.delete_button-right {
+    color: #fff;
+    background-color: #000000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ページネーション */
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}
+
+.space {
+    padding-left: 15px;
+}
+
+.pagination-right {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+.flex-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
