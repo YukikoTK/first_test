@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
-use App\Models\Customer;
 
 
 class CustomerController extends Controller
@@ -56,7 +55,8 @@ class CustomerController extends Controller
         $query->where('email', 'like', '%' . $email . '%');
     }
 
-    $contacts = $query->with('customer')->paginate(10);
+    // $contacts = $query->with('customer')->paginate(10);
+    $contacts = $query->paginate(10);
 
     return view('customer', compact('contacts'));
 }
